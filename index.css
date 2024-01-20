@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%)
+}
+
+.content
+{
+    /* width: 800px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    gap: 20px;
+}
+
+.banner img
+{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    /* height: fit-content; */
+}
+
+.subscribe-form
+{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    flex-direction: column;
+    width: 420px;
+    padding: 30px;
+}
+
+.heading
+{
+    font-weight: 700;
+    font-size: 28px;
+    /* text-align: center; */
+    padding-bottom: 20px;
+}
+
+.tagline
+{
+    margin-bottom: 20px;
+}
+
+.list span
+{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list img
+{
+    margin-right: 10px;
+}
+
+.list
+{
+    margin-bottom: 30px;
+}
+
+.input-form label
+{
+    margin-bottom: 10px;
+}
+
+.inline
+{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+} 
+
+.error-message
+{
+    color: hsl(4, 100%, 67%);
+    font-weight: 700;
+    font-size: 14px;
+}
+.input-form input
+{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+
+}
+
+.input-form button
+{
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.list, .input-form
+{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form button:hover
+{
+    background-color: hsl(4, 100%, 67%);
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .subscribe-form
+    {
+        width: auto;
+    }
+
+    .banner img
+    {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 16px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .content
+    {
+        flex-direction: column-reverse;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .banner img
+    {
+        height: 280px;
+    }
+    
+    .heading
+    {
+        font-size: 22px;
+    }
+}
+
+.sucess
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.sucess-heading
+{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.sucess img
+{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.sucess-message
+{
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: hsl(235, 18%, 26%);
+}
+
+.sucess-message span
+{
+    font-weight: 700;
+}
+
+.go-back-button button
+{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.go-back-button button:hover
+{
+    background-color:  hsl(4, 100%, 67%);
+
+}
+
+.hide-form
+{
+    display: flex;
+}
+
+.hide-sucess
+{
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+    body
+    {
+        background-color: white;
+    }
+
+    .sucess
+    {
+        background-color: transparent;
+    }
+}
+
+
